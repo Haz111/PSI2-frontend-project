@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Panel zarządzania zakwaterowaniem</title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../../js/materialize.min.js"></script>
+
+<header class="page-header teal lighten-2">
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <a href="#" class="brand-logo">MSSM Organization System</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Zdzisiu Cebula</a></li>
+                <li><a href="#">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <a href="zarzadzanie_uczestnikami.html">
+            <button class="btn waves-effect waves-light">
+                <i class="mdi-navigation-arrow-back"></i>
+                Wróć do listy uczestników
+            </button>
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <h5>Miejsca noclegowe</h5>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th data-field="id">ID</th>
+                <th data-field="nazwa">nazwa</th>
+                <th data-field="lokalizacja">lokalizacja</th>
+                <th data-field="zajetych_miejsc">zajętych miejsc</th>
+                <th data-field="autobus">autobus</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Schronisko Młodzieżowe w Gdziesiach</td>
+            <td>Gdziesie</td>
+            <td><a href="#">23</a>/100</td>
+            <td>
+                <select class="browser-default">
+                    <option value="0">Brak</option>
+                    <option value="1">Autobus 1</option>
+                    <option value="2">Autobus 2</option>
+                    <option value="3">Autobus 3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pole namiotowe k. Białegostoku</td>
+            <td>Supraśl</td>
+            <td><a href="#">40</a>/40</td>
+            <td>
+                <select class="browser-default">
+                    <option value="0">Brak</option>
+                    <option value="1" selected>Autobus 1</option>
+                    <option value="2">Autobus 2</option>
+                    <option value="3">Autobus 3</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4th camp</td>
+            <td>Everest</td>
+            <td>0/20</td>
+            <td>
+                <select class="browser-default">
+                    <option value="0">Brak</option>
+                    <option value="1">Autobus 1</option>
+                    <option value="2">Autobus 2</option>
+                    <option value="3" selected="selected">Autobus 3</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Domki letniskowe</td>
+            <td>Békésszentandrás</td>
+            <td><a href="3">40</a>/40</td>
+            <td>
+                <select class="browser-default">
+                    <option value="0">Brak</option>
+                    <option value="1">Autobus 1</option>
+                    <option value="2">Autobus 2</option>
+                    <option value="3">Autobus 3</option>
+                </select>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Autobusy</h5>
+        <ul class="collection">
+            <li class="collection-item">Autobus 1</li>
+            <li class="collection-item">Autobus 2</li>
+            <li class="collection-item">Autobus 3</li>
+            <li class="collection-item">Autobus 4</li>
+            <a class="btn-floating"><i class="mdi-content-add"></i></a>
+        </ul>
+    </div>
+</div>
+
+
+<footer class="page-footer teal lighten-2" style="position:absolute; bottom:0; width:100%;">
+    <div class="footer-copyright">
+        <div class="container">
+            © 2015 Copyright
+            <span class="grey-text text-lighten-4 right">Provided by: Michał, Grzegorz, Hubert PSI Company</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

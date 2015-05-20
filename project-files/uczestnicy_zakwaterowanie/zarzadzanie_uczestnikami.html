@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Panel zarządzania uczestnikami</title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../../js/materialize.min.js"></script>
+
+<header class="page-header teal lighten-2">
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <a href="#" class="brand-logo">MSSM Organization System</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Zdzisiu Cebula</a></li>
+                <li><a href="#">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+            <button class="btn waves-effect waves-light" >
+                Sprawdź aktualizacje listy
+                <i class="mdi-action-autorenew"></i>
+            </button>
+            <a href="zarzadzanie_zakwaterowaniem.html">
+                <button class="btn waves-effect waves-light" >
+                    Zarządzanie zakwaterowaniem
+                    <i class="mdi-action-home"></i>
+                </button>
+            </a>
+    </div>
+</header>
+
+<div class="container">
+    <table class="striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th data-field="id">ID</th>
+                <th data-field="imie">Imię</th>
+                <th data-field="nazwisko">Nazwisko</th>
+                <th data-field="grupa_uczestnikow">Grupa</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>Andrzej</td>
+            <td>Śmietana</td>
+            <td><a href="#">Wąchock</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>2</td>
+            <td>Zdzisiu</td>
+            <td>Zdzisiewski</td>
+            <td><a href="#">Wąchock</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>3</td>
+            <td>Marilyn</td>
+            <td>Monroe</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>4</td>
+            <td>Bożydar</td>
+            <td>Bożydarski</td>
+            <td><a href="#">nie</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>5</td>
+            <td>James</td>
+            <td>Windsor</td>
+            <td><a href="#">nie</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>6</td>
+            <td>Euzebiusz</td>
+            <td>Euzebski</td>
+            <td><a href="#">Fajne dzieci</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>007</td>
+            <td>Bond,</td>
+            <td>James Bond</td>
+            <td><a href="#">MI6</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>8</td>
+            <td>-</td>
+            <td>M</td>
+            <td><a href="#">MI6</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>9</td>
+            <td>Niels</td>
+            <td>Abel</td>
+            <td><a href="#">Abelowa</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+            
+<footer class="page-footer teal lighten-2" style="position:absolute; bottom:0; width:100%;">
+    <div class="footer-copyright">
+        <div class="container">
+            © 2015 Copyright
+            <span class="grey-text text-lighten-4 right">Provided by: Michał, Grzegorz, Hubert PSI Company</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
