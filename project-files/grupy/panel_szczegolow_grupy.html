@@ -30,62 +30,97 @@
 <div class="container">
     <div class="row">
         <div class="col s12">
+            <p class="grey-text center-align">
+                Zarządzane grupą
+            </p>
             <p class="grey-text flow-text center-align">
-                Panel zarządzania grupami
+                Grupa Organizacyjna
             </p>
         </div>
     </div>
     <div class="row">
-        <table class="striped responsive-table">
+        <table class="col offset-s2 s8 striped responsive-table">
             <thead>
             <tr>
-                <th data-field="id">Nazwa grupy</th>
-                <th data-field="name">Reprezentant</th>
+                <th data-field="id">Nazwa członka</th>
                 <th data-field="price" class="center-align">Opcje</th>
             </tr>
             </thead>
 
             <tbody>
             <tr>
-                <td  style="padding: 5px">Grupa Organizacyjna</td>
                 <td  style="padding: 5px">Jan Kowalski</td>
                 <td  style="padding: 5px" class="center-align">
                     <i class="small mdi-action-delete" style="padding-left: 5px; padding-right: 5px"></i>
                     <i class="small mdi-action-settings" style="padding-left: 5px; padding-right: 5px"></i>
+                    <i class="small mdi-communication-message" style="padding-left: 5px; padding-right: 5px"></i>
                 </td>
             </tr>
             <tr>
-                <td>Grupa muzyczna</td>
                 <td>Anna Nowa</td>
                 <td  style="padding: 5px" class="center-align">
                     <i class="small mdi-action-delete" style="padding-left: 5px; padding-right: 5px"></i>
                     <i class="small mdi-action-settings" style="padding-left: 5px; padding-right: 5px"></i>
+                    <i class="small mdi-communication-message" style="padding-left: 5px; padding-right: 5px"></i>
                 </td>
             </tr>
             <tr>
-                <td>Grupa artystyczna</td>
                 <td>Beata Sienkiewicz</td>
                 <td  style="padding: 5px" class="center-align">
                     <i class="small mdi-action-delete" style="padding-left: 5px; padding-right: 5px"></i>
                     <i class="small mdi-action-settings" style="padding-left: 5px; padding-right: 5px"></i>
+                    <i class="small mdi-communication-message" style="padding-left: 5px; padding-right: 5px"></i>
                 </td>
             </tr>
             <tr>
-                <td>Grupa medyczna</td>
-                <td></td>
+                <td>Adam Puszyński</td>
                 <td  style="padding: 5px" class="center-align">
                     <i class="small mdi-action-delete" style="padding-left: 5px; padding-right: 5px"></i>
                     <i class="small mdi-action-settings" style="padding-left: 5px; padding-right: 5px"></i>
+                    <i class="small mdi-communication-message" style="padding-left: 5px; padding-right: 5px"></i>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
     <div class ="row">
-        <div class="col offset-s4 s4">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Add new group
-                <i class="mdi-content-send right"></i>
-            </button>
+        <div class="col offset-s2 s4 center-right">
+            <button class=" btn waves-effect waves-light" type="submit" name="action">Zarządzaj zleceniami</button>
+        </div>
+        <div class="col s4 center-right">
+            <button class=" btn waves-effect waves-light" type="submit" name="action">Wyślij wiadomość grupową</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col offset-s3  s6">
+            <p class="grey-text">Dodaj członka grupy:</p>
+            <select class="browser-default">
+                <option value="" disabled selected>Wybierz użytkownika systemu</option>
+                <option value="1">Jan Nowak</option>
+                <option value="2">Andrzej Sobiemierski</option>
+                <option value="3">Aleksander Iksiński</option>
+            </select>
+        </div>
+    </div>
+    <div class ="row">
+        <div class="col offset-s3 s6 center-align">
+            <button class=" btn waves-effect waves-light" type="submit" name="action">Dodaj członka grupy</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col offset-s3  s6">
+            <p class="grey-text">Wybierz reprezentanta grupy:</p>
+            <select class="browser-default">
+                <option value="" disabled selected>Wybierz reprezentanta</option>
+                <option value="1">Jan Nowak</option>
+                <option value="2">Andrzej Sobiemierski</option>
+                <option value="3">Aleksander Iksiński</option>
+            </select>
+        </div>
+    </div>
+    <div class ="row">
+        <div class="col offset-s3 s6 center-align">
+            <button class=" btn waves-effect waves-light" type="submit" name="action">Zapisz zmiany</button>
         </div>
     </div>
 </div>
@@ -101,8 +136,3 @@
 
 </body>
 </html>
-
-<!--TODO sprawdzic  dane wyprowadzane z systemu - bo czasem trzeba stworzyc jakis przycisk do tego-->
-
-<!--TODO sprawdzic -->
-

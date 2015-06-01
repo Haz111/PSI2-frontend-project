@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../../js/materialize.min.js"></script>
+
+<header class="page-header teal lighten-2">
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <a href="#" class="brand-logo">MSSM Organization System</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="">Logowanie</a></li>
+                <li><a href="">Nowe hasło</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div style="height: 30px"></div>
+<div class="container">
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="col offset-s4 s4">
+                    <p class="grey-text flow-text center-align">
+                        Tworzenie nowej grupy
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s3 s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Nazwa grupy</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s3  s6">
+                    <p class="grey-text">Wybierz grupę nadrzędną:</p>
+                    <select class="browser-default">
+                        <option value="" disabled selected>Brak grupy nadrzędnej</option>
+                        <option value="1">Grupa Organizacyjna</option>
+                        <option value="2">Grupa muzyczna</option>
+                        <option value="3">Grupa artystyczna</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s3  s6">
+                    <p class="grey-text">Wybierz reprezentanta grupy:</p>
+                    <select class="browser-default">
+                        <option value="" disabled selected>Wybierz reprezentanta</option>
+                        <option value="1">Jan Nowak</option>
+                        <option value="2">Andrzej Sobiemierski</option>
+                        <option value="3">Aleksander Iksiński</option>
+                    </select>
+                </div>
+            </div>
+            <div class ="row">
+                <div class="col offset-s4 s4 center-align">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Dodaj grupę</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="page-footer teal lighten-2" style="position:absolute; bottom:0; width:100%;">
+    <div class="footer-copyright">
+        <div class="container">
+            © 2015 Copyright
+            <span class="grey-text text-lighten-4 right">Provided by: Michał, Grzegorz, Hubert PSI Company</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
